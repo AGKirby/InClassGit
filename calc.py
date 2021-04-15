@@ -25,6 +25,7 @@ def calc():
         return
     # print the results
     print(str(num1) + " " + operation + " " + str(num2) + " = " + str(result))
+    #change made
 
 
 def add(x, y):
