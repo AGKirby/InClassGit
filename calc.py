@@ -15,5 +15,14 @@ def calc():
         divide = num1 / num2
     except: #divide by zero error!
         divide = None
+    #put the results in a list
+    operation = ["Addition: ", "Subtraction: ", "Multiplication: ", "Division: "]
+    resultsList = [sum, difference, multiply, divide]
+    total = 0
+    for i in range(len(resultsList)):
+        print(operation[i] + str(resultsList[i]))
+        total += resultsList[i]
+    print("The sum of the list is " + str(total))
+        
 
 calc()
