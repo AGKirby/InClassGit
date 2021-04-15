@@ -19,9 +19,11 @@ def calc():
     operation = ["Addition: ", "Subtraction: ", "Multiplication: ", "Division: "]
     resultsList = [sum, difference, multiply, divide]
     total = 0
+    # print the results and sum the list
     for i in range(len(resultsList)):
         print(operation[i] + str(resultsList[i]))
         total += resultsList[i]
+    # print the sum of the list
     print("The sum of the list is " + str(total))
         
 
