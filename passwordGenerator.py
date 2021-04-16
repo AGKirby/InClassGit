@@ -10,7 +10,9 @@ def generatePassword():
     password = []
     for i in range(length):
         password += ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits)) #random uppercase character, lowercase character, or digit
-
+    print("Your password is: ", end="")
+    for c in password:
+        print(c, end="")
 
 
 generatePassword()
