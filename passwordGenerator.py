@@ -1,0 +1,6 @@
+def generatePassword():
+    pass
+
+
+
+generatePassword()
