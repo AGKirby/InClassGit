@@ -1,3 +1,6 @@
+import string
+import random
+
 def generatePassword():
     try: 
         length = int(input("Please enter the length of the password to be generated: ")) # get a number from the user
@@ -6,7 +9,7 @@ def generatePassword():
         return
     password = []
     for i in range(length):
-        password += "A"
+        password += ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits)) #random uppercase character, lowercase character, or digit
 
 
 
